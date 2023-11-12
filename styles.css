@@ -1,0 +1,62 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-align: center;
+    
+    
+}
+
+#title_tx {
+    color: goldenrod;
+}
+
+#message-el {
+    font-style: italic;
+    color: gold;
+
+    
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
+#btn_sc {
+    color: goldenrod;
+}
+
+#cards_txt
+{
+    font-weight: bold;
+    color: #016f32;
+}
+
+#sum-el
+{
+    font-weight: bold;
+    color: #016f32;
+}
+
+
+#main_sc
+{
+    border-style: solid;
+    border-radius: 3px;
+    border-color: black;
+    margin-top: 15%;
+    padding: 2.5%;
+    background-image: url("bj.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
