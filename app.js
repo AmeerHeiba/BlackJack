@@ -22,15 +22,15 @@ function startGame()
 
     if (sumx <= 20) {
         message = "Do you want to draw a new card?";
-        cards_txt.textContent = "Cards Are: "+ cards[0] + " | "+ cards[1];
+        showCards(cards);
         
     } else if (sumx === 21) {
         message = "You've got Blackjack!";
-        cards_txt.textContent = "Cards Are: "+ cards[0] + " | "+ cards[1];
+        showCards(cards);
         hasBlackJack = true
     } else {
         message = "You're out of the game!";
-        cards_txt.textContent = "Cards Are: "+ cards[0] + " | "+ cards[1];
+        showCards(cards);
         isAlive = false
     }
     messageEl.textContent = message
@@ -54,3 +54,15 @@ function totalScore(sco)
     return sum;
 }
 
+function showCards(arr)
+{    
+    cards_txt.textContent = "Cards:  ";
+    for (let index = 0; index < arr.length; index++) 
+    {
+
+     console.log(arr[index]);
+     cards_txt.textContent += arr[index] + " ";
+    
+    }
+    
+}
