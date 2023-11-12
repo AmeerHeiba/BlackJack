@@ -1,6 +1,6 @@
 let score = [];
-let firstCard = Math.ceil(Math.random()*11);
-let secondCard = Math.ceil(Math.random()*11);
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 let cards = [firstCard, secondCard];
 let hasBlackJack = false;
 let isAlive = true;
@@ -44,7 +44,7 @@ function gameLoop()
 
 function newCard()
 {
-    cards.push(Math.ceil(Math.random()*10));
+    cards.push(getRandomCard());
     gameLoop();
 }
 
@@ -78,4 +78,22 @@ function resetGame()
     finalMsg.textContent = " Thank you for Playing!";
     newCardBtn.hidden = true;
 
+}
+
+function getRandomCard() 
+{
+
+    let randomNumer = Math.floor( Math.random()*13 ) + 1;
+    if (randomNumer > 10) 
+    {
+        return 10;
+    } 
+    else if (randomNumer === 1) 
+    {
+        return 11;
+    } 
+    else 
+    {
+        return randomNumer;
+    }
 }
