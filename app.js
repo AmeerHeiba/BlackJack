@@ -11,6 +11,9 @@ let cards_txt = document.getElementById("cards_txt");
 let sumx = 0;
 let finalMsg = document.getElementById("message-final");
 let newCardBtn = document.getElementById("new_card");
+let newGameBtn = document.getElementById("new_btn");
+let exitGameBtn = document.getElementById("exit_btn");
+let loopBtn = document.getElementById("loop");
 // 2. Store the cards paragraph in a variable called cardsEl
 
 
@@ -77,6 +80,9 @@ function resetGame()
     finalMsg.hidden = false;
     finalMsg.textContent = " Thank you for Playing!";
     newCardBtn.hidden = true;
+    loopBtn.hidden = true;
+    newGameBtn.hidden = false;
+    exitGameBtn.hidden = false;
 
 }
 
@@ -96,4 +102,14 @@ function getRandomCard()
     {
         return randomNumer;
     }
+}
+
+function exitGame()
+{
+    window.close();
+}
+
+function newGame()
+{
+    window.location.reload();
 }

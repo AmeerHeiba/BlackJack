@@ -19,8 +19,10 @@
             <div class="row-6" id="btn_sc">
                 <h5 id="cards_txt">Cards:</h5>
                 <h5 id="sum-el">Sum:</h5>
-                <button onclick="gameLoop()">START GAME</button>
+                <button onclick="gameLoop()" id="loop">START GAME</button>
                 <button onclick="newCard()" id="new_card">New Card</button>
+                <button hidden onclick="newGame()" id="new_btn">New Game</button>
+                <button hidden onclick="exitGame()" id="exit_btn">Exit Game</button>
             </div>
         </div>
         
