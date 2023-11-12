@@ -19,6 +19,13 @@ body {
     
 }
 
+#message-final
+{
+    font-style: italic;
+    color: gold;
+
+}
+
 button {
     color: #016f32;
     width: 150px;
