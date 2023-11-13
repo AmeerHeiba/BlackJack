@@ -20,6 +20,7 @@ let loopBtn = document.getElementById("loop");
 
 function gameLoop() 
 {
+  
 
     sumx = totalScore(cards);
     sumEl.textContent = "Sum: " + sumx;
@@ -42,13 +43,15 @@ function gameLoop()
     }
     messageEl.textContent = message
 
-}
 
+}
 
 function newCard()
 {
+  
     cards.push(getRandomCard());
     gameLoop();
+
 }
 
 function totalScore(sco)
@@ -63,7 +66,8 @@ function totalScore(sco)
 }
 
 function showCards(arr)
-{    
+{ 
+   
     cards_txt.textContent = "Cards:  ";
     for (let index = 0; index < arr.length; index++) 
     {
@@ -71,6 +75,7 @@ function showCards(arr)
     
     }
     
+
 }
 
 function resetGame()
@@ -89,6 +94,7 @@ function resetGame()
 function getRandomCard() 
 {
 
+
     let randomNumer = Math.floor( Math.random()*13 ) + 1;
     if (randomNumer > 10) 
     {
@@ -101,7 +107,9 @@ function getRandomCard()
     else 
     {
         return randomNumer;
-    }
+    
+}
+
 }
 
 function exitGame()

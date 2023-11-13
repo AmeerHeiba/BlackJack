@@ -60,11 +60,21 @@ button {
     border-style: solid;
     border-radius: 3px;
     border-color: black;
-    margin-top: 15%;
+    margin-top: 1.5%;
     padding: 2.5%;
     background-image: url("bj.jpg");
     background-size: cover;
     background-repeat: no-repeat;
    
+}
+
+#inst_sc
+{
+    color: rgb(240, 215, 183);
+    border-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 2.5%;
+    margin-top: 1.5%;
 }
 
